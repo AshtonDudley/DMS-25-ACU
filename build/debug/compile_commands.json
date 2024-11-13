@@ -1,0 +1,158 @@
+[
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\main.c.obj -c C:\\FSAE\\DMS-25-ACU\\Core\\Src\\main.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Core\\Src\\main.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\main.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\gpio.c.obj -c C:\\FSAE\\DMS-25-ACU\\Core\\Src\\gpio.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Core\\Src\\gpio.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\gpio.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\fdcan.c.obj -c C:\\FSAE\\DMS-25-ACU\\Core\\Src\\fdcan.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Core\\Src\\fdcan.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\fdcan.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\stm32g0xx_it.c.obj -c C:\\FSAE\\DMS-25-ACU\\Core\\Src\\stm32g0xx_it.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Core\\Src\\stm32g0xx_it.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\stm32g0xx_it.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\stm32g0xx_hal_msp.c.obj -c C:\\FSAE\\DMS-25-ACU\\Core\\Src\\stm32g0xx_hal_msp.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Core\\Src\\stm32g0xx_hal_msp.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\stm32g0xx_hal_msp.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_fdcan.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_fdcan.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_fdcan.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_fdcan.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_rcc.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_rcc.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_rcc.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_rcc.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_rcc_ex.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_rcc_ex.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_rcc_ex.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_rcc_ex.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_ll_rcc.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_ll_rcc.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_ll_rcc.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_ll_rcc.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_flash.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_flash.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_flash.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_flash.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_flash_ex.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_flash_ex.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_flash_ex.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_flash_ex.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_gpio.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_gpio.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_gpio.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_gpio.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_dma.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_dma.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_dma.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_dma.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_dma_ex.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_dma_ex.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_dma_ex.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_dma_ex.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_ll_dma.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_ll_dma.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_ll_dma.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_ll_dma.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_pwr.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_pwr.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_pwr.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_pwr.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_pwr_ex.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_pwr_ex.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_pwr_ex.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_pwr_ex.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_cortex.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_cortex.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_cortex.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_cortex.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_exti.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_exti.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_exti.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_exti.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_tim.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_tim.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_tim.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_tim.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_tim_ex.c.obj -c C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_tim_ex.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_tim_ex.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_tim_ex.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\system_stm32g0xx.c.obj -c C:\\FSAE\\DMS-25-ACU\\Core\\Src\\system_stm32g0xx.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Core\\Src\\system_stm32g0xx.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\system_stm32g0xx.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\sysmem.c.obj -c C:\\FSAE\\DMS-25-ACU\\Core\\Src\\sysmem.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Core\\Src\\sysmem.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\sysmem.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\syscalls.c.obj -c C:\\FSAE\\DMS-25-ACU\\Core\\Src\\syscalls.c",
+  "file": "C:\\FSAE\\DMS-25-ACU\\Core\\Src\\syscalls.c",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\Core\\Src\\syscalls.c.obj"
+},
+{
+  "directory": "C:/FSAE/DMS-25-ACU/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.15.1\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G0B1xx -DUSE_HAL_DRIVER -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Core/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/FSAE/DMS-25-ACU/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -x assembler-with-cpp -MMD -MP -g -o CMakeFiles\\DMS-25-ACU.dir\\startup_stm32g0b1xx.s.obj -c C:\\FSAE\\DMS-25-ACU\\startup_stm32g0b1xx.s",
+  "file": "C:\\FSAE\\DMS-25-ACU\\startup_stm32g0b1xx.s",
+  "output": "CMakeFiles\\DMS-25-ACU.dir\\startup_stm32g0b1xx.s.obj"
+}
+]
