@@ -23,9 +23,8 @@ extern FDCAN_HandleTypeDef hfdcan1;
 // CANbus Data Frame
 uint8_t ubKeyNumber = 0x0;
 uint8_t ubKeyNumberValue = 0x0;
-FDCAN_RxHeaderTypeDef RxHeader;
+
 FDCAN_TxHeaderTypeDef TxHeader;
-uint8_t RxData[8];
 uint8_t TxData[8];
 
 // CANbus Heartbeat 
@@ -203,19 +202,21 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
 
 void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)
 {
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
+    FDCAN_RxHeaderTypeDef RxHeader;
+    uint8_t RxData[8];
+    
     if((RxFifo0ITs & FDCAN_IT_RX_FIFO0_NEW_MESSAGE) != RESET)
         {
         /* retrieve Rx messages from RX FIFO0 */
         if (HAL_FDCAN_GetRxMessage(hfdcan, FDCAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK)
         {
-        /* Reception Error */
-        Error_Handler();
+            /* Reception Error */
+            Error_Handler();
         }
         
-        if ((RxHeader.Identifier == 0x321) && (RxHeader.IdType == FDCAN_STANDARD_ID) && (RxHeader.DataLength == FDCAN_DLC_BYTES_2))
+        if ((RxHeader.Identifier == 0x321) && (RxHeader.IdType == FDCAN_STANDARD_ID))
         {
-            __NOP();
+            HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
         }
     }
 }
