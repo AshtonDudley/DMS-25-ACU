@@ -2,6 +2,8 @@
 #include "main.h"
 #include "dma.h"
 
+#include <stdlib.h>
+
 // Defines
 #define ADC_BUFFER_LEN 3
 
@@ -60,7 +62,7 @@ void app_main(){
 
     while (1){
         
-        currentTime = HAL_GetTick();
+        currentTime = HAL_GetTick();    
         if (currentTime - prevTime > 500){
             prevTime = currentTime;
             HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
