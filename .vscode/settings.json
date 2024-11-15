@@ -2,15 +2,25 @@
     "cSpell.words": [
         "AHBCLK",
         "CLOCKTYPE",
+        "contactors",
+        "Cplt",
         "FDCAN",
         "GPIO",
+        "GPIOA",
         "GPIOB",
         "HCLK",
         "HSICALIBRATION",
+        "htim",
         "OSCILLATORTYPE",
         "PCLK",
+        "precharge",
         "SYSCLK",
         "SYSCLKSOURCE",
-        "Systick"
-    ]
+        "Systick",
+        "vbatt"
+    ],
+    "files.associations": {
+        "main.h": "c",
+        "dma.h": "c"
+    }
 }
