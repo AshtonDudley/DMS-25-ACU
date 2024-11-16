@@ -5710,7 +5710,7 @@ LOAD C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x08000000                g_pfnVectors
                 0x080000bc                        . = ALIGN (0x4)
 
-.text           0x080000c0     0x7c5c
+.text           0x080000c0     0x7c6c
                 0x080000c0                        . = ALIGN (0x4)
  *(.text)
  .text          0x080000c0       0x48 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
@@ -5736,709 +5736,709 @@ LOAD C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x0800034c       0x40 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
                 0x0800034c                app_init
  .text.StateMachineTaskEntry
-                0x0800038c      0x10c CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
+                0x0800038c      0x110 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
                 0x0800038c                StateMachineTaskEntry
  .text.HVCStatusTaskEntry
-                0x08000498       0x9c CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
-                0x08000498                HVCStatusTaskEntry
+                0x0800049c       0xb0 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
+                0x0800049c                HVCStatusTaskEntry
  .text.HAL_ADC_ConvHalfCpltCallback
-                0x08000534       0x10 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
-                0x08000534                HAL_ADC_ConvHalfCpltCallback
+                0x0800054c       0x10 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
+                0x0800054c                HAL_ADC_ConvHalfCpltCallback
  .text.HAL_ADC_ConvCpltCallback
-                0x08000544       0x10 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
-                0x08000544                HAL_ADC_ConvCpltCallback
+                0x0800055c       0x10 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
+                0x0800055c                HAL_ADC_ConvCpltCallback
  .text.HAL_FDCAN_RxFifo0Callback
-                0x08000554       0xb8 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
-                0x08000554                HAL_FDCAN_RxFifo0Callback
+                0x0800056c       0xb8 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
+                0x0800056c                HAL_FDCAN_RxFifo0Callback
  .text.can_heartbeat
-                0x0800060c       0x5c CMakeFiles/DMS-25-ACU.dir/Core/User/heartbeat.c.obj
-                0x0800060c                can_heartbeat
+                0x08000624       0x5c CMakeFiles/DMS-25-ACU.dir/Core/User/heartbeat.c.obj
+                0x08000624                can_heartbeat
  .text.HeartbeatTaskEntry
-                0x08000668       0x64 CMakeFiles/DMS-25-ACU.dir/Core/User/heartbeat.c.obj
-                0x08000668                HeartbeatTaskEntry
+                0x08000680       0x64 CMakeFiles/DMS-25-ACU.dir/Core/User/heartbeat.c.obj
+                0x08000680                HeartbeatTaskEntry
  .text.enable_precharge_relay
-                0x080006cc       0x18 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
-                0x080006cc                enable_precharge_relay
- .text.enable_air_negative
                 0x080006e4       0x18 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
-                0x080006e4                enable_air_negative
- .text.enable_air_positive
+                0x080006e4                enable_precharge_relay
+ .text.enable_air_negative
                 0x080006fc       0x18 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
-                0x080006fc                enable_air_positive
- .text.disable_precharge_relay
+                0x080006fc                enable_air_negative
+ .text.enable_air_positive
                 0x08000714       0x18 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
-                0x08000714                disable_precharge_relay
+                0x08000714                enable_air_positive
+ .text.disable_precharge_relay
+                0x0800072c       0x18 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
+                0x0800072c                disable_precharge_relay
  .text.disable_all_relays
-                0x0800072c       0x34 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
-                0x0800072c                disable_all_relays
- .text.main     0x08000760       0x34 CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
-                0x08000760                main
+                0x08000744       0x34 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
+                0x08000744                disable_all_relays
+ .text.main     0x08000778       0x34 CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
+                0x08000778                main
  .text.SystemClock_Config
-                0x08000794       0xbc CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
-                0x08000794                SystemClock_Config
+                0x080007ac       0xbc CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
+                0x080007ac                SystemClock_Config
  .text.HAL_TIM_PeriodElapsedCallback
-                0x08000850       0x24 CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
-                0x08000850                HAL_TIM_PeriodElapsedCallback
+                0x08000868       0x24 CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
+                0x08000868                HAL_TIM_PeriodElapsedCallback
  .text.Error_Handler
-                0x08000874        0xc CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
-                0x08000874                Error_Handler
+                0x0800088c        0xc CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
+                0x0800088c                Error_Handler
  .text.MX_GPIO_Init
-                0x08000880       0xbc CMakeFiles/DMS-25-ACU.dir/Core/Src/gpio.c.obj
-                0x08000880                MX_GPIO_Init
+                0x08000898       0xbc CMakeFiles/DMS-25-ACU.dir/Core/Src/gpio.c.obj
+                0x08000898                MX_GPIO_Init
  .text.MX_FREERTOS_Init
-                0x0800093c       0x64 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
-                0x0800093c                MX_FREERTOS_Init
+                0x08000954       0x64 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
+                0x08000954                MX_FREERTOS_Init
  .text.MX_ADC1_Init
-                0x080009a0      0x124 CMakeFiles/DMS-25-ACU.dir/Core/Src/adc.c.obj
-                0x080009a0                MX_ADC1_Init
+                0x080009b8      0x124 CMakeFiles/DMS-25-ACU.dir/Core/Src/adc.c.obj
+                0x080009b8                MX_ADC1_Init
  .text.HAL_ADC_MspInit
-                0x08000ac4       0xe4 CMakeFiles/DMS-25-ACU.dir/Core/Src/adc.c.obj
-                0x08000ac4                HAL_ADC_MspInit
+                0x08000adc       0xe4 CMakeFiles/DMS-25-ACU.dir/Core/Src/adc.c.obj
+                0x08000adc                HAL_ADC_MspInit
  .text.MX_DMA_Init
-                0x08000ba8       0x3c CMakeFiles/DMS-25-ACU.dir/Core/Src/dma.c.obj
-                0x08000ba8                MX_DMA_Init
+                0x08000bc0       0x3c CMakeFiles/DMS-25-ACU.dir/Core/Src/dma.c.obj
+                0x08000bc0                MX_DMA_Init
  .text.MX_FDCAN1_Init
-                0x08000be4       0x90 CMakeFiles/DMS-25-ACU.dir/Core/Src/fdcan.c.obj
-                0x08000be4                MX_FDCAN1_Init
+                0x08000bfc       0x90 CMakeFiles/DMS-25-ACU.dir/Core/Src/fdcan.c.obj
+                0x08000bfc                MX_FDCAN1_Init
  .text.HAL_FDCAN_MspInit
-                0x08000c74       0xe4 CMakeFiles/DMS-25-ACU.dir/Core/Src/fdcan.c.obj
-                0x08000c74                HAL_FDCAN_MspInit
+                0x08000c8c       0xe4 CMakeFiles/DMS-25-ACU.dir/Core/Src/fdcan.c.obj
+                0x08000c8c                HAL_FDCAN_MspInit
  .text.MX_TIM2_Init
-                0x08000d58       0xf8 CMakeFiles/DMS-25-ACU.dir/Core/Src/tim.c.obj
-                0x08000d58                MX_TIM2_Init
+                0x08000d70       0xf8 CMakeFiles/DMS-25-ACU.dir/Core/Src/tim.c.obj
+                0x08000d70                MX_TIM2_Init
  .text.HAL_TIM_Base_MspInit
-                0x08000e50       0x38 CMakeFiles/DMS-25-ACU.dir/Core/Src/tim.c.obj
-                0x08000e50                HAL_TIM_Base_MspInit
+                0x08000e68       0x38 CMakeFiles/DMS-25-ACU.dir/Core/Src/tim.c.obj
+                0x08000e68                HAL_TIM_Base_MspInit
  .text.NMI_Handler
-                0x08000e88        0x8 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08000e88                NMI_Handler
+                0x08000ea0        0x8 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
+                0x08000ea0                NMI_Handler
  .text.HardFault_Handler
-                0x08000e90        0x8 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08000e90                HardFault_Handler
+                0x08000ea8        0x8 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
+                0x08000ea8                HardFault_Handler
  .text.DMA1_Channel1_IRQHandler
-                0x08000e98       0x18 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08000e98                DMA1_Channel1_IRQHandler
- .text.TIM6_DAC_LPTIM1_IRQHandler
                 0x08000eb0       0x18 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08000eb0                TIM6_DAC_LPTIM1_IRQHandler
- .text.TIM16_FDCAN_IT0_IRQHandler
+                0x08000eb0                DMA1_Channel1_IRQHandler
+ .text.TIM6_DAC_LPTIM1_IRQHandler
                 0x08000ec8       0x18 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08000ec8                TIM16_FDCAN_IT0_IRQHandler
- .text.TIM17_FDCAN_IT1_IRQHandler
+                0x08000ec8                TIM6_DAC_LPTIM1_IRQHandler
+ .text.TIM16_FDCAN_IT0_IRQHandler
                 0x08000ee0       0x18 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08000ee0                TIM17_FDCAN_IT1_IRQHandler
+                0x08000ee0                TIM16_FDCAN_IT0_IRQHandler
+ .text.TIM17_FDCAN_IT1_IRQHandler
+                0x08000ef8       0x18 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
+                0x08000ef8                TIM17_FDCAN_IT1_IRQHandler
  .text.HAL_MspInit
-                0x08000ef8       0x60 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_msp.c.obj
-                0x08000ef8                HAL_MspInit
+                0x08000f10       0x60 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_msp.c.obj
+                0x08000f10                HAL_MspInit
  .text.HAL_InitTick
-                0x08000f58      0x108 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_timebase_tim.c.obj
-                0x08000f58                HAL_InitTick
+                0x08000f70      0x108 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_timebase_tim.c.obj
+                0x08000f70                HAL_InitTick
  .text.LL_ADC_SetCommonPathInternalCh
-                0x08001060       0x28 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001078       0x28 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_GetCommonPathInternalCh
-                0x08001088       0x1a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x080010a0       0x1a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_SetSamplingTimeCommonChannels
-                0x080010a2       0x3a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x080010ba       0x3a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_GetSamplingTimeCommonChannels
-                0x080010dc       0x2e CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x080010f4       0x2e CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_REG_IsTriggerSourceSWStart
-                0x0800110a       0x22 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001122       0x22 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_REG_SetSequencerRanks
-                0x0800112c       0x40 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001144       0x40 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_REG_SetSequencerChAdd
-                0x0800116c       0x22 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001184       0x22 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_REG_SetSequencerChRem
-                0x0800118e       0x24 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
- *fill*         0x080011b2        0x2 
+                0x080011a6       0x24 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+ *fill*         0x080011ca        0x2 
  .text.LL_ADC_SetChannelSamplingTime
-                0x080011b4       0x38 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x080011cc       0x38 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_EnableInternalRegulator
-                0x080011ec       0x28 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001204       0x28 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_IsInternalRegulatorEnabled
-                0x08001214       0x28 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x0800122c       0x28 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_Enable
-                0x0800123c       0x24 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001254       0x24 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_Disable
-                0x08001260       0x24 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001278       0x24 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_IsEnabled
-                0x08001284       0x22 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
- *fill*         0x080012a6        0x2 
+                0x0800129c       0x22 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+ *fill*         0x080012be        0x2 
  .text.LL_ADC_REG_StartConversion
-                0x080012a8       0x24 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x080012c0       0x24 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_ADC_REG_IsConversionOngoing
-                0x080012cc       0x22 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
- *fill*         0x080012ee        0x2 
+                0x080012e4       0x22 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+ *fill*         0x08001306        0x2 
  .text.HAL_ADC_Init
-                0x080012f0      0x350 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
-                0x080012f0                HAL_ADC_Init
+                0x08001308      0x350 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001308                HAL_ADC_Init
  .text.HAL_ADC_Start_DMA
-                0x08001640      0x11c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
-                0x08001640                HAL_ADC_Start_DMA
+                0x08001658      0x11c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001658                HAL_ADC_Start_DMA
  .text.HAL_ADC_ErrorCallback
-                0x0800175c       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
-                0x0800175c                HAL_ADC_ErrorCallback
+                0x08001774       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001774                HAL_ADC_ErrorCallback
  .text.HAL_ADC_ConfigChannel
-                0x0800176c      0x3b0 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
-                0x0800176c                HAL_ADC_ConfigChannel
+                0x08001784      0x3b0 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001784                HAL_ADC_ConfigChannel
  .text.ADC_Enable
-                0x08001b1c      0x10c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
-                0x08001b1c                ADC_Enable
+                0x08001b34      0x10c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001b34                ADC_Enable
  .text.ADC_DMAConvCplt
-                0x08001c28       0xc8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001c40       0xc8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.ADC_DMAHalfConvCplt
-                0x08001cf0       0x1e CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001d08       0x1e CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.ADC_DMAError
-                0x08001d0e       0x36 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+                0x08001d26       0x36 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
  .text.LL_RCC_GetAPB1Prescaler
-                0x08001d44       0x18 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x08001d5c       0x18 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
  .text.HAL_RCC_OscConfig
-                0x08001d5c      0x6c0 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x08001d5c                HAL_RCC_OscConfig
+                0x08001d74      0x6c0 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x08001d74                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x0800241c      0x210 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x0800241c                HAL_RCC_ClockConfig
+                0x08002434      0x210 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x08002434                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x0800262c      0x104 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x0800262c                HAL_RCC_GetSysClockFreq
+                0x08002644      0x104 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x08002644                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_GetHCLKFreq
-                0x08002730       0x14 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x08002730                HAL_RCC_GetHCLKFreq
+                0x08002748       0x14 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x08002748                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08002744       0x2c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x08002744                HAL_RCC_GetPCLK1Freq
+                0x0800275c       0x2c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x0800275c                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetClockConfig
-                0x08002770       0x54 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x08002770                HAL_RCC_GetClockConfig
+                0x08002788       0x54 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x08002788                HAL_RCC_GetClockConfig
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x080027c4      0x478 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
-                0x080027c4                HAL_RCCEx_PeriphCLKConfig
+                0x080027dc      0x478 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
+                0x080027dc                HAL_RCCEx_PeriphCLKConfig
  .text.HAL_GPIO_Init
-                0x08002c3c      0x2d8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
-                0x08002c3c                HAL_GPIO_Init
+                0x08002c54      0x2d8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
+                0x08002c54                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08002f14       0x3a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
-                0x08002f14                HAL_GPIO_WritePin
+                0x08002f2c       0x3a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
+                0x08002f2c                HAL_GPIO_WritePin
  .text.HAL_GPIO_TogglePin
-                0x08002f4e       0x36 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
-                0x08002f4e                HAL_GPIO_TogglePin
+                0x08002f66       0x36 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
+                0x08002f66                HAL_GPIO_TogglePin
  .text.HAL_DMA_Init
-                0x08002f84      0x158 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
-                0x08002f84                HAL_DMA_Init
+                0x08002f9c      0x158 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+                0x08002f9c                HAL_DMA_Init
  .text.HAL_DMA_Start_IT
-                0x080030dc      0x10c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
-                0x080030dc                HAL_DMA_Start_IT
+                0x080030f4      0x10c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+                0x080030f4                HAL_DMA_Start_IT
  .text.HAL_DMA_IRQHandler
-                0x080031e8      0x188 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
-                0x080031e8                HAL_DMA_IRQHandler
+                0x08003200      0x188 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+                0x08003200                HAL_DMA_IRQHandler
  .text.DMA_SetConfig
-                0x08003370       0x78 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+                0x08003388       0x78 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
  .text.DMA_CalcDMAMUXChannelBaseAndMask
-                0x080033e8       0x94 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+                0x08003400       0x94 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
  .text.DMA_CalcDMAMUXRequestGenBaseAndMask
-                0x0800347c       0x48 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+                0x08003494       0x48 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
  .text.HAL_PWREx_ControlVoltageScaling
-                0x080034c4       0x80 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
-                0x080034c4                HAL_PWREx_ControlVoltageScaling
+                0x080034dc       0x80 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
+                0x080034dc                HAL_PWREx_ControlVoltageScaling
  .text.__NVIC_EnableIRQ
-                0x08003544       0x34 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x0800355c       0x34 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x08003578       0xdc CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x08003590       0xdc CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriority
-                0x08003654       0x2a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
-                0x08003654                HAL_NVIC_SetPriority
+                0x0800366c       0x2a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x0800366c                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x0800367e       0x20 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
-                0x0800367e                HAL_NVIC_EnableIRQ
- *fill*         0x0800369e        0x2 
+                0x08003696       0x20 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x08003696                HAL_NVIC_EnableIRQ
+ *fill*         0x080036b6        0x2 
  .text.HAL_Init
-                0x080036a0       0x40 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
-                0x080036a0                HAL_Init
+                0x080036b8       0x40 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+                0x080036b8                HAL_Init
  .text.HAL_IncTick
-                0x080036e0       0x24 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
-                0x080036e0                HAL_IncTick
+                0x080036f8       0x24 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+                0x080036f8                HAL_IncTick
  .text.HAL_GetTick
-                0x08003704       0x14 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
-                0x08003704                HAL_GetTick
+                0x0800371c       0x14 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+                0x0800371c                HAL_GetTick
  .text.HAL_SYSCFG_StrobeDBattpinsConfig
-                0x08003718       0x2c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
-                0x08003718                HAL_SYSCFG_StrobeDBattpinsConfig
+                0x08003730       0x2c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+                0x08003730                HAL_SYSCFG_StrobeDBattpinsConfig
  .text.HAL_FDCAN_Init
-                0x08003744      0x2cc CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08003744                HAL_FDCAN_Init
+                0x0800375c      0x2cc CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x0800375c                HAL_FDCAN_Init
  .text.HAL_FDCAN_ConfigFilter
-                0x08003a10       0xba CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08003a10                HAL_FDCAN_ConfigFilter
+                0x08003a28       0xba CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x08003a28                HAL_FDCAN_ConfigFilter
  .text.HAL_FDCAN_ConfigGlobalFilter
-                0x08003aca       0x60 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08003aca                HAL_FDCAN_ConfigGlobalFilter
+                0x08003ae2       0x60 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x08003ae2                HAL_FDCAN_ConfigGlobalFilter
  .text.HAL_FDCAN_Start
-                0x08003b2a       0x4c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08003b2a                HAL_FDCAN_Start
+                0x08003b42       0x4c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x08003b42                HAL_FDCAN_Start
  .text.HAL_FDCAN_AddMessageToTxFifoQ
-                0x08003b76       0x8a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08003b76                HAL_FDCAN_AddMessageToTxFifoQ
+                0x08003b8e       0x8a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x08003b8e                HAL_FDCAN_AddMessageToTxFifoQ
  .text.HAL_FDCAN_GetRxMessage
-                0x08003c00      0x21c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08003c00                HAL_FDCAN_GetRxMessage
+                0x08003c18      0x21c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x08003c18                HAL_FDCAN_GetRxMessage
  .text.HAL_FDCAN_ActivateNotification
-                0x08003e1c      0x1ac CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08003e1c                HAL_FDCAN_ActivateNotification
+                0x08003e34      0x1ac CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x08003e34                HAL_FDCAN_ActivateNotification
  .text.HAL_FDCAN_IRQHandler
-                0x08003fc8      0x26a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08003fc8                HAL_FDCAN_IRQHandler
+                0x08003fe0      0x26a CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x08003fe0                HAL_FDCAN_IRQHandler
  .text.HAL_FDCAN_TxEventFifoCallback
-                0x08004232       0x12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08004232                HAL_FDCAN_TxEventFifoCallback
+                0x0800424a       0x12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x0800424a                HAL_FDCAN_TxEventFifoCallback
  .text.HAL_FDCAN_RxFifo1Callback
-                0x08004244       0x12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08004244                HAL_FDCAN_RxFifo1Callback
+                0x0800425c       0x12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x0800425c                HAL_FDCAN_RxFifo1Callback
  .text.HAL_FDCAN_TxFifoEmptyCallback
-                0x08004256       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08004256                HAL_FDCAN_TxFifoEmptyCallback
+                0x0800426e       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x0800426e                HAL_FDCAN_TxFifoEmptyCallback
  .text.HAL_FDCAN_TxBufferCompleteCallback
-                0x08004266       0x12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08004266                HAL_FDCAN_TxBufferCompleteCallback
+                0x0800427e       0x12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x0800427e                HAL_FDCAN_TxBufferCompleteCallback
  .text.HAL_FDCAN_TxBufferAbortCallback
-                0x08004278       0x12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x08004278                HAL_FDCAN_TxBufferAbortCallback
+                0x08004290       0x12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x08004290                HAL_FDCAN_TxBufferAbortCallback
  .text.HAL_FDCAN_TimestampWraparoundCallback
-                0x0800428a       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x0800428a                HAL_FDCAN_TimestampWraparoundCallback
+                0x080042a2       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x080042a2                HAL_FDCAN_TimestampWraparoundCallback
  .text.HAL_FDCAN_TimeoutOccurredCallback
-                0x0800429a       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x0800429a                HAL_FDCAN_TimeoutOccurredCallback
+                0x080042b2       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x080042b2                HAL_FDCAN_TimeoutOccurredCallback
  .text.HAL_FDCAN_HighPriorityMessageCallback
-                0x080042aa       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x080042aa                HAL_FDCAN_HighPriorityMessageCallback
+                0x080042c2       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x080042c2                HAL_FDCAN_HighPriorityMessageCallback
  .text.HAL_FDCAN_ErrorCallback
-                0x080042ba       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x080042ba                HAL_FDCAN_ErrorCallback
+                0x080042d2       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x080042d2                HAL_FDCAN_ErrorCallback
  .text.HAL_FDCAN_ErrorStatusCallback
-                0x080042ca       0x12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
-                0x080042ca                HAL_FDCAN_ErrorStatusCallback
+                0x080042e2       0x12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x080042e2                HAL_FDCAN_ErrorStatusCallback
  .text.FDCAN_CalcultateRamBlockAddresses
-                0x080042dc       0xd8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x080042f4       0xd8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
  .text.FDCAN_CopyMessageToRAM
-                0x080043b4       0xf8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x080043cc       0xf8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
  .text.HAL_TIM_Base_Init
-                0x080044ac       0xb0 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x080044ac                HAL_TIM_Base_Init
+                0x080044c4       0xb0 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x080044c4                HAL_TIM_Base_Init
  .text.HAL_TIM_Base_Start
-                0x0800455c       0xb4 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x0800455c                HAL_TIM_Base_Start
+                0x08004574       0xb4 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08004574                HAL_TIM_Base_Start
  .text.HAL_TIM_Base_Start_IT
-                0x08004610       0xc4 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08004610                HAL_TIM_Base_Start_IT
+                0x08004628       0xc4 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08004628                HAL_TIM_Base_Start_IT
  .text.HAL_TIM_PWM_Init
-                0x080046d4       0xb0 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x080046d4                HAL_TIM_PWM_Init
+                0x080046ec       0xb0 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x080046ec                HAL_TIM_PWM_Init
  .text.HAL_TIM_PWM_MspInit
-                0x08004784       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08004784                HAL_TIM_PWM_MspInit
+                0x0800479c       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x0800479c                HAL_TIM_PWM_MspInit
  .text.HAL_TIM_IRQHandler
-                0x08004794      0x210 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08004794                HAL_TIM_IRQHandler
+                0x080047ac      0x210 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x080047ac                HAL_TIM_IRQHandler
  .text.HAL_TIM_PWM_ConfigChannel
-                0x080049a4      0x200 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x080049a4                HAL_TIM_PWM_ConfigChannel
+                0x080049bc      0x200 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x080049bc                HAL_TIM_PWM_ConfigChannel
  .text.HAL_TIM_ConfigClockSource
-                0x08004ba4      0x1ac CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08004ba4                HAL_TIM_ConfigClockSource
+                0x08004bbc      0x1ac CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08004bbc                HAL_TIM_ConfigClockSource
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x08004d50       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08004d50                HAL_TIM_OC_DelayElapsedCallback
+                0x08004d68       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08004d68                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x08004d60       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08004d60                HAL_TIM_IC_CaptureCallback
+                0x08004d78       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08004d78                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08004d70       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08004d70                HAL_TIM_PWM_PulseFinishedCallback
+                0x08004d88       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08004d88                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x08004d80       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08004d80                HAL_TIM_TriggerCallback
+                0x08004d98       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08004d98                HAL_TIM_TriggerCallback
  .text.TIM_Base_SetConfig
-                0x08004d90      0x130 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08004d90                TIM_Base_SetConfig
+                0x08004da8      0x130 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08004da8                TIM_Base_SetConfig
  .text.TIM_OC1_SetConfig
-                0x08004ec0      0x114 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08004ed8      0x114 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_OC2_SetConfig
-                0x08004fd4      0x108 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08004fd4                TIM_OC2_SetConfig
+                0x08004fec      0x108 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08004fec                TIM_OC2_SetConfig
  .text.TIM_OC3_SetConfig
-                0x080050dc      0x110 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x080050f4      0x110 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_OC4_SetConfig
-                0x080051ec       0xd4 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08005204       0xd4 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_OC5_SetConfig
-                0x080052c0       0xc0 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x080052d8       0xc0 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_OC6_SetConfig
-                0x08005380       0xc8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08005398       0xc8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_TI1_ConfigInputStage
-                0x08005448       0x5c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08005460       0x5c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x080054a4       0x64 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x080054bc       0x64 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x08005508       0x38 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08005520       0x38 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_ETR_SetConfig
-                0x08005540       0x40 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08005540                TIM_ETR_SetConfig
+                0x08005558       0x40 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08005558                TIM_ETR_SetConfig
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08005580       0xec CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
-                0x08005580                HAL_TIMEx_MasterConfigSynchronization
+                0x08005598       0xec CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+                0x08005598                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_CommutCallback
-                0x0800566c       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
-                0x0800566c                HAL_TIMEx_CommutCallback
+                0x08005684       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+                0x08005684                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x0800567c       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
-                0x0800567c                HAL_TIMEx_BreakCallback
+                0x08005694       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+                0x08005694                HAL_TIMEx_BreakCallback
  .text.HAL_TIMEx_Break2Callback
-                0x0800568c       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
-                0x0800568c                HAL_TIMEx_Break2Callback
+                0x080056a4       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+                0x080056a4                HAL_TIMEx_Break2Callback
  .text.SystemInit
-                0x0800569c        0xa CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
-                0x0800569c                SystemInit
+                0x080056b4        0xa CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
+                0x080056b4                SystemInit
  .text.vListInitialise
-                0x080056a6       0x3c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
-                0x080056a6                vListInitialise
+                0x080056be       0x3c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+                0x080056be                vListInitialise
  .text.vListInitialiseItem
-                0x080056e2       0x16 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
-                0x080056e2                vListInitialiseItem
+                0x080056fa       0x16 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+                0x080056fa                vListInitialiseItem
  .text.vListInsertEnd
-                0x080056f8       0x44 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
-                0x080056f8                vListInsertEnd
+                0x08005710       0x44 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+                0x08005710                vListInsertEnd
  .text.vListInsert
-                0x0800573c       0x6c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
-                0x0800573c                vListInsert
+                0x08005754       0x6c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+                0x08005754                vListInsert
  .text.uxListRemove
-                0x080057a8       0x50 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
-                0x080057a8                uxListRemove
+                0x080057c0       0x50 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+                0x080057c0                uxListRemove
  .text.xQueueGenericReset
-                0x080057f8       0xaa CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
-                0x080057f8                xQueueGenericReset
+                0x08005810       0xaa CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x08005810                xQueueGenericReset
  .text.xQueueGenericCreateStatic
-                0x080058a2       0xa2 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
-                0x080058a2                xQueueGenericCreateStatic
+                0x080058ba       0xa2 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x080058ba                xQueueGenericCreateStatic
  .text.prvInitialiseNewQueue
-                0x08005944       0x4e CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x0800595c       0x4e CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
  .text.xQueueGenericSend
-                0x08005992      0x190 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
-                0x08005992                xQueueGenericSend
+                0x080059aa      0x190 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x080059aa                xQueueGenericSend
  .text.xQueueGenericSendFromISR
-                0x08005b22       0xee CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
-                0x08005b22                xQueueGenericSendFromISR
+                0x08005b3a       0xee CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x08005b3a                xQueueGenericSendFromISR
  .text.xQueueReceive
-                0x08005c10      0x170 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
-                0x08005c10                xQueueReceive
+                0x08005c28      0x170 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x08005c28                xQueueReceive
  .text.prvCopyDataToQueue
-                0x08005d80       0xd6 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x08005d98       0xd6 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
  .text.prvCopyDataFromQueue
-                0x08005e56       0x4c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x08005e6e       0x4c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
  .text.prvUnlockQueue
-                0x08005ea2       0xbc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x08005eba       0xbc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
  .text.prvIsQueueEmpty
-                0x08005f5e       0x2c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x08005f76       0x2c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
  .text.prvIsQueueFull
-                0x08005f8a       0x30 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
- *fill*         0x08005fba        0x2 
+                0x08005fa2       0x30 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+ *fill*         0x08005fd2        0x2 
  .text.vQueueAddToRegistry
-                0x08005fbc       0x50 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
-                0x08005fbc                vQueueAddToRegistry
+                0x08005fd4       0x50 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x08005fd4                vQueueAddToRegistry
  .text.vQueueWaitForMessageRestricted
-                0x0800600c       0x66 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
-                0x0800600c                vQueueWaitForMessageRestricted
+                0x08006024       0x66 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x08006024                vQueueWaitForMessageRestricted
  .text.xTaskCreateStatic
-                0x08006072       0x8e CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x08006072                xTaskCreateStatic
+                0x0800608a       0x8e CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0800608a                xTaskCreateStatic
  .text.xTaskCreate
-                0x08006100       0x98 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x08006100                xTaskCreate
+                0x08006118       0x98 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006118                xTaskCreate
  .text.prvInitialiseNewTask
-                0x08006198      0x114 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x080061b0      0x114 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvAddNewTaskToReadyList
-                0x080062ac       0xd0 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x080062c4       0xd0 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.vTaskDelay
-                0x0800637c       0x4c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x0800637c                vTaskDelay
+                0x08006394       0x4c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006394                vTaskDelay
  .text.vTaskStartScheduler
-                0x080063c8       0xac CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x080063c8                vTaskStartScheduler
+                0x080063e0       0xac CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x080063e0                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x08006474       0x18 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x08006474                vTaskSuspendAll
+                0x0800648c       0x18 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0800648c                vTaskSuspendAll
  .text.xTaskResumeAll
-                0x0800648c      0x118 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x0800648c                xTaskResumeAll
+                0x080064a4      0x118 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x080064a4                xTaskResumeAll
  .text.xTaskGetTickCount
-                0x080065a4       0x1c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x080065a4                xTaskGetTickCount
+                0x080065bc       0x1c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x080065bc                xTaskGetTickCount
  .text.xTaskIncrementTick
-                0x080065c0      0x160 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x080065c0                xTaskIncrementTick
+                0x080065d8      0x160 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x080065d8                xTaskIncrementTick
  .text.vTaskSwitchContext
-                0x08006720       0xa4 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x08006720                vTaskSwitchContext
+                0x08006738       0xa4 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006738                vTaskSwitchContext
  .text.vTaskPlaceOnEventList
-                0x080067c4       0x40 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x080067c4                vTaskPlaceOnEventList
+                0x080067dc       0x40 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x080067dc                vTaskPlaceOnEventList
  .text.vTaskPlaceOnEventListRestricted
-                0x08006804       0x50 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x08006804                vTaskPlaceOnEventListRestricted
+                0x0800681c       0x50 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0800681c                vTaskPlaceOnEventListRestricted
  .text.xTaskRemoveFromEventList
-                0x08006854       0xbc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x08006854                xTaskRemoveFromEventList
+                0x0800686c       0xbc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0800686c                xTaskRemoveFromEventList
  .text.vTaskInternalSetTimeOutState
-                0x08006910       0x28 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x08006910                vTaskInternalSetTimeOutState
+                0x08006928       0x28 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006928                vTaskInternalSetTimeOutState
  .text.xTaskCheckForTimeOut
-                0x08006938       0xa4 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x08006938                xTaskCheckForTimeOut
+                0x08006950       0xa4 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006950                xTaskCheckForTimeOut
  .text.vTaskMissedYield
-                0x080069dc       0x14 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x080069dc                vTaskMissedYield
+                0x080069f4       0x14 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x080069f4                vTaskMissedYield
  .text.prvIdleTask
-                0x080069f0       0x20 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006a08       0x20 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvInitialiseTaskLists
-                0x08006a10       0x88 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006a28       0x88 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvCheckTasksWaitingTermination
-                0x08006a98       0x5c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006ab0       0x5c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvDeleteTCB
-                0x08006af4       0x52 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- *fill*         0x08006b46        0x2 
+                0x08006b0c       0x52 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ *fill*         0x08006b5e        0x2 
  .text.prvResetNextTaskUnblockTime
-                0x08006b48       0x3c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006b60       0x3c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.xTaskGetSchedulerState
-                0x08006b84       0x38 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x08006b84                xTaskGetSchedulerState
+                0x08006b9c       0x38 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006b9c                xTaskGetSchedulerState
  .text.xTaskPriorityDisinherit
-                0x08006bbc       0xbc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x08006bbc                xTaskPriorityDisinherit
+                0x08006bd4       0xbc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006bd4                xTaskPriorityDisinherit
  .text.prvAddCurrentTaskToDelayedList
-                0x08006c78       0xa8 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08006c90       0xa8 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.xTimerCreateTimerTask
-                0x08006d20       0x80 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
-                0x08006d20                xTimerCreateTimerTask
+                0x08006d38       0x80 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x08006d38                xTimerCreateTimerTask
  .text.xTimerGenericCommand
-                0x08006da0       0x98 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
-                0x08006da0                xTimerGenericCommand
+                0x08006db8       0x98 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x08006db8                xTimerGenericCommand
  .text.prvProcessExpiredTimer
-                0x08006e38       0x8c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x08006e50       0x8c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .text.prvTimerTask
-                0x08006ec4       0x2a CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- *fill*         0x08006eee        0x2 
+                0x08006edc       0x2a CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ *fill*         0x08006f06        0x2 
  .text.prvProcessTimerOrBlockTask
-                0x08006ef0       0x90 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x08006f08       0x90 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .text.prvGetNextExpireTime
-                0x08006f80       0x44 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x08006f98       0x44 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .text.prvSampleTimeNow
-                0x08006fc4       0x40 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x08006fdc       0x40 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .text.prvInsertTimerInActiveList
-                0x08007004       0x84 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x0800701c       0x84 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .text.prvProcessReceivedCommands
-                0x08007088      0x194 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x080070a0      0x194 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .text.prvSwitchTimerLists
-                0x0800721c       0xbc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x08007234       0xbc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .text.prvCheckForValidListAndQueue
-                0x080072d8       0x84 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x080072f0       0x84 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .text.__NVIC_SetPriority
-                0x0800735c       0xdc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+                0x08007374       0xdc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
  .text.SysTick_Handler
-                0x08007438       0x20 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
-                0x08007438                SysTick_Handler
+                0x08007450       0x20 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+                0x08007450                SysTick_Handler
  .text.SVC_Setup
-                0x08007458       0x16 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
- *fill*         0x0800746e        0x2 
+                0x08007470       0x16 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+ *fill*         0x08007486        0x2 
  .text.osKernelInitialize
-                0x08007470       0x44 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
-                0x08007470                osKernelInitialize
+                0x08007488       0x44 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+                0x08007488                osKernelInitialize
  .text.osKernelStart
-                0x080074b4       0x4c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
-                0x080074b4                osKernelStart
+                0x080074cc       0x4c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+                0x080074cc                osKernelStart
  .text.osThreadNew
-                0x08007500      0x12c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
-                0x08007500                osThreadNew
- .text.osDelay  0x0800762c       0x38 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
-                0x0800762c                osDelay
+                0x08007518      0x12c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+                0x08007518                osThreadNew
+ .text.osDelay  0x08007644       0x38 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+                0x08007644                osDelay
  .text.vApplicationGetIdleTaskMemory
-                0x08007664       0x30 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
-                0x08007664                vApplicationGetIdleTaskMemory
+                0x0800767c       0x30 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+                0x0800767c                vApplicationGetIdleTaskMemory
  .text.vApplicationGetTimerTaskMemory
-                0x08007694       0x30 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
-                0x08007694                vApplicationGetTimerTaskMemory
+                0x080076ac       0x30 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+                0x080076ac                vApplicationGetTimerTaskMemory
  .text.pvPortMalloc
-                0x080076c4      0x160 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
-                0x080076c4                pvPortMalloc
+                0x080076dc      0x160 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x080076dc                pvPortMalloc
  .text.vPortFree
-                0x08007824       0xa0 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
-                0x08007824                vPortFree
+                0x0800783c       0xa0 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x0800783c                vPortFree
  .text.prvHeapInit
-                0x080078c4       0xc0 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x080078dc       0xc0 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .text.prvInsertBlockIntoFreeList
-                0x08007984       0xb0 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x0800799c       0xb0 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .text.pxPortInitialiseStack
-                0x08007a34       0x54 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007a34                pxPortInitialiseStack
+                0x08007a4c       0x54 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007a4c                pxPortInitialiseStack
  .text.prvTaskExitError
-                0x08007a88       0x30 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007aa0       0x30 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
  .text.SVC_Handler
-                0x08007ab8        0xa CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007ab8                SVC_Handler
- *fill*         0x08007ac2        0xe 
+                0x08007ad0        0xa CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007ad0                SVC_Handler
+ *fill*         0x08007ada        0x6 
  .text.vPortStartFirstTask
-                0x08007ad0       0x38 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007ae0       0x38 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
  .text.xPortStartScheduler
-                0x08007b08       0x48 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007b08                xPortStartScheduler
+                0x08007b18       0x48 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007b18                xPortStartScheduler
  .text.vPortYield
-                0x08007b50       0x20 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007b50                vPortYield
+                0x08007b60       0x20 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007b60                vPortYield
  .text.vPortEnterCritical
-                0x08007b70       0x24 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007b70                vPortEnterCritical
+                0x08007b80       0x24 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007b80                vPortEnterCritical
  .text.vPortExitCritical
-                0x08007b94       0x30 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007b94                vPortExitCritical
+                0x08007ba4       0x30 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007ba4                vPortExitCritical
  .text.ulSetInterruptMaskFromISR
-                0x08007bc4        0xc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007bc4                ulSetInterruptMaskFromISR
+                0x08007bd4        0xc CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007bd4                ulSetInterruptMaskFromISR
  .text.vClearInterruptMaskFromISR
-                0x08007bd0        0x8 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007bd0                vClearInterruptMaskFromISR
- *fill*         0x08007bd8        0x8 
+                0x08007be0        0x8 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007be0                vClearInterruptMaskFromISR
+ *fill*         0x08007be8        0x8 
  .text.PendSV_Handler
-                0x08007be0       0x48 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007be0                PendSV_Handler
+                0x08007bf0       0x48 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007bf0                PendSV_Handler
  .text.xPortSysTickHandler
-                0x08007c28       0x34 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007c28                xPortSysTickHandler
+                0x08007c38       0x34 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007c38                xPortSysTickHandler
  .text.vPortSetupTimerInterrupt
-                0x08007c5c       0x44 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-                0x08007c5c                vPortSetupTimerInterrupt
+                0x08007c6c       0x44 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+                0x08007c6c                vPortSetupTimerInterrupt
  .text.Reset_Handler
-                0x08007ca0       0x50 CMakeFiles/DMS-25-ACU.dir/startup_stm32g0b1xx.s.obj
-                0x08007ca0                Reset_Handler
+                0x08007cb0       0x50 CMakeFiles/DMS-25-ACU.dir/startup_stm32g0b1xx.s.obj
+                0x08007cb0                Reset_Handler
  .text.Default_Handler
-                0x08007cf0        0x2 CMakeFiles/DMS-25-ACU.dir/startup_stm32g0b1xx.s.obj
-                0x08007cf0                I2C2_3_IRQHandler
-                0x08007cf0                USART3_4_5_6_LPUART1_IRQHandler
-                0x08007cf0                TIM1_CC_IRQHandler
-                0x08007cf0                ADC1_COMP_IRQHandler
-                0x08007cf0                I2C1_IRQHandler
-                0x08007cf0                TIM7_LPTIM2_IRQHandler
-                0x08007cf0                DMA1_Ch4_7_DMA2_Ch1_5_DMAMUX1_OVR_IRQHandler
-                0x08007cf0                RCC_CRS_IRQHandler
-                0x08007cf0                RTC_TAMP_IRQHandler
-                0x08007cf0                SPI1_IRQHandler
-                0x08007cf0                USB_UCPD1_2_IRQHandler
-                0x08007cf0                EXTI2_3_IRQHandler
-                0x08007cf0                USART2_LPUART2_IRQHandler
-                0x08007cf0                PVD_VDDIO2_IRQHandler
-                0x08007cf0                EXTI4_15_IRQHandler
-                0x08007cf0                Default_Handler
-                0x08007cf0                CEC_IRQHandler
-                0x08007cf0                TIM14_IRQHandler
-                0x08007cf0                TIM15_IRQHandler
-                0x08007cf0                TIM3_TIM4_IRQHandler
-                0x08007cf0                EXTI0_1_IRQHandler
-                0x08007cf0                SPI2_3_IRQHandler
-                0x08007cf0                WWDG_IRQHandler
-                0x08007cf0                TIM2_IRQHandler
-                0x08007cf0                DMA1_Channel2_3_IRQHandler
-                0x08007cf0                FLASH_IRQHandler
-                0x08007cf0                USART1_IRQHandler
-                0x08007cf0                TIM1_BRK_UP_TRG_COM_IRQHandler
- .text.memcpy   0x08007cf2       0x12 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
-                0x08007cf2                memcpy
+                0x08007d00        0x2 CMakeFiles/DMS-25-ACU.dir/startup_stm32g0b1xx.s.obj
+                0x08007d00                I2C2_3_IRQHandler
+                0x08007d00                USART3_4_5_6_LPUART1_IRQHandler
+                0x08007d00                TIM1_CC_IRQHandler
+                0x08007d00                ADC1_COMP_IRQHandler
+                0x08007d00                I2C1_IRQHandler
+                0x08007d00                TIM7_LPTIM2_IRQHandler
+                0x08007d00                DMA1_Ch4_7_DMA2_Ch1_5_DMAMUX1_OVR_IRQHandler
+                0x08007d00                RCC_CRS_IRQHandler
+                0x08007d00                RTC_TAMP_IRQHandler
+                0x08007d00                SPI1_IRQHandler
+                0x08007d00                USB_UCPD1_2_IRQHandler
+                0x08007d00                EXTI2_3_IRQHandler
+                0x08007d00                USART2_LPUART2_IRQHandler
+                0x08007d00                PVD_VDDIO2_IRQHandler
+                0x08007d00                EXTI4_15_IRQHandler
+                0x08007d00                Default_Handler
+                0x08007d00                CEC_IRQHandler
+                0x08007d00                TIM14_IRQHandler
+                0x08007d00                TIM15_IRQHandler
+                0x08007d00                TIM3_TIM4_IRQHandler
+                0x08007d00                EXTI0_1_IRQHandler
+                0x08007d00                SPI2_3_IRQHandler
+                0x08007d00                WWDG_IRQHandler
+                0x08007d00                TIM2_IRQHandler
+                0x08007d00                DMA1_Channel2_3_IRQHandler
+                0x08007d00                FLASH_IRQHandler
+                0x08007d00                USART1_IRQHandler
+                0x08007d00                TIM1_BRK_UP_TRG_COM_IRQHandler
+ .text.memcpy   0x08007d02       0x12 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
+                0x08007d02                memcpy
  *(.glue_7)
- .glue_7        0x08007d04        0x0 linker stubs
+ .glue_7        0x08007d14        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08007d04        0x0 linker stubs
+ .glue_7t       0x08007d14        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08007d04        0x0 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
+ .eh_frame      0x08007d14        0x0 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
  *(.init)
- .init          0x08007d04        0x4 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crti.o
-                0x08007d04                _init
- .init          0x08007d08        0x8 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtn.o
+ .init          0x08007d14        0x4 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crti.o
+                0x08007d14                _init
+ .init          0x08007d18        0x8 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtn.o
  *(.fini)
- .fini          0x08007d10        0x4 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crti.o
-                0x08007d10                _fini
- .fini          0x08007d14        0x8 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtn.o
-                0x08007d1c                        . = ALIGN (0x4)
-                0x08007d1c                        _etext = .
+ .fini          0x08007d20        0x4 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crti.o
+                0x08007d20                _fini
+ .fini          0x08007d24        0x8 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtn.o
+                0x08007d2c                        . = ALIGN (0x4)
+                0x08007d2c                        _etext = .
 
-.vfp11_veneer   0x08007d1c        0x0
- .vfp11_veneer  0x08007d1c        0x0 linker stubs
+.vfp11_veneer   0x08007d2c        0x0
+ .vfp11_veneer  0x08007d2c        0x0 linker stubs
 
-.v4_bx          0x08007d1c        0x0
- .v4_bx         0x08007d1c        0x0 linker stubs
+.v4_bx          0x08007d2c        0x0
+ .v4_bx         0x08007d2c        0x0 linker stubs
 
-.iplt           0x08007d1c        0x0
- .iplt          0x08007d1c        0x0 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x08007d2c        0x0
+ .iplt          0x08007d2c        0x0 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x08007d1c      0x1b8
-                0x08007d1c                        . = ALIGN (0x4)
+.rodata         0x08007d2c      0x1b8
+                0x08007d2c                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08007d1c       0x2c CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
- .rodata        0x08007d48        0x5 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- *fill*         0x08007d4d        0x3 
- .rodata        0x08007d50        0xd CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- *(.rodata*)
+ .rodata        0x08007d2c       0x2c CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
+ .rodata        0x08007d58        0x5 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  *fill*         0x08007d5d        0x3 
+ .rodata        0x08007d60        0xd CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ *(.rodata*)
+ *fill*         0x08007d6d        0x3 
  .rodata.StateMachineTaskEntry
-                0x08007d60       0x1c CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
+                0x08007d70       0x1c CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
  .rodata.Task_StatusLED_attributes
-                0x08007d7c       0x24 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
-                0x08007d7c                Task_StatusLED_attributes
+                0x08007d8c       0x24 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
+                0x08007d8c                Task_StatusLED_attributes
  .rodata.Task_HVCStatus_attributes
-                0x08007da0       0x24 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
-                0x08007da0                Task_HVCStatus_attributes
+                0x08007db0       0x24 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
+                0x08007db0                Task_HVCStatus_attributes
  .rodata.Task_StateM_attributes
-                0x08007dc4       0x24 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
-                0x08007dc4                Task_StateM_attributes
+                0x08007dd4       0x24 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
+                0x08007dd4                Task_StateM_attributes
  .rodata.DLCtoBytes
-                0x08007de8       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+                0x08007df8       0x10 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
  .rodata.HAL_TIM_PWM_ConfigChannel
-                0x08007df8       0x54 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08007e08       0x54 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .rodata.AHBPrescTable
-                0x08007e4c       0x40 CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
-                0x08007e4c                AHBPrescTable
+                0x08007e5c       0x40 CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
+                0x08007e5c                AHBPrescTable
  .rodata.APBPrescTable
-                0x08007e8c       0x20 CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
-                0x08007e8c                APBPrescTable
+                0x08007e9c       0x20 CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
+                0x08007e9c                APBPrescTable
  .rodata.prvProcessReceivedCommands
-                0x08007eac       0x28 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
-                0x08007ed4                        . = ALIGN (0x4)
+                0x08007ebc       0x28 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x08007ee4                        . = ALIGN (0x4)
 
-.rel.dyn        0x08007ed4        0x0
- .rel.iplt      0x08007ed4        0x0 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x08007ee4        0x0
+ .rel.iplt      0x08007ee4        0x0 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08007ed4        0x0
-                0x08007ed4                        __exidx_start = .
+.ARM            0x08007ee4        0x0
+                0x08007ee4                        __exidx_start = .
  *(.ARM.exidx*)
-                0x08007ed4                        __exidx_end = .
+                0x08007ee4                        __exidx_end = .
 
-.preinit_array  0x08007ed4        0x0
-                0x08007ed4                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08007ee4        0x0
+                0x08007ee4                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08007ed4                        PROVIDE (__preinit_array_end = .)
+                0x08007ee4                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x08007ed4        0x4
-                0x08007ed4                        PROVIDE (__init_array_start = .)
+.init_array     0x08007ee4        0x4
+                0x08007ee4                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08007ed4        0x4 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x08007ed8                        PROVIDE (__init_array_end = .)
+ .init_array    0x08007ee4        0x4 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x08007ee8                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x08007ed8        0x4
+.fini_array     0x08007ee8        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08007ed8        0x4 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
+ .fini_array    0x08007ee8        0x4 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08007edc                        _sidata = LOADADDR (.data)
+                0x08007eec                        _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x14 load address 0x08007edc
+.data           0x20000000       0x14 load address 0x08007eec
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -6462,11 +6462,11 @@ LOAD C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x20000014                        . = ALIGN (0x4)
                 0x20000014                        _edata = .
 
-.igot.plt       0x20000014        0x0 load address 0x08007ef0
+.igot.plt       0x20000014        0x0 load address 0x08007f00
  .igot.plt      0x20000014        0x0 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
                 0x20000014                        . = ALIGN (0x4)
 
-.bss            0x20000014     0x1b70 load address 0x08007ef0
+.bss            0x20000014     0x1b70 load address 0x08007f00
                 0x20000014                        _sbss = .
                 0x20000014                        __bss_start__ = _sbss
  *(.bss)
@@ -6605,7 +6605,7 @@ LOAD C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x20001b84                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20001b84      0x604 load address 0x08007ef0
+                0x20001b84      0x604 load address 0x08007f00
                 0x20001b88                        . = ALIGN (0x8)
  *fill*         0x20001b84        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -6750,77 +6750,77 @@ LOAD C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_frame   0x00005b70       0x20 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
  .debug_frame   0x00005b90       0x28 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
 
-.debug_info     0x00000000    0x1b45f
- .debug_info    0x00000000     0x1713 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
- .debug_info    0x00001713      0x841 CMakeFiles/DMS-25-ACU.dir/Core/User/heartbeat.c.obj
- .debug_info    0x00001f54      0x250 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
- .debug_info    0x000021a4      0xb0a CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
- .debug_info    0x00002cae      0x3da CMakeFiles/DMS-25-ACU.dir/Core/Src/gpio.c.obj
- .debug_info    0x00003088      0x435 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
- .debug_info    0x000034bd      0xbce CMakeFiles/DMS-25-ACU.dir/Core/Src/adc.c.obj
- .debug_info    0x0000408b      0x365 CMakeFiles/DMS-25-ACU.dir/Core/Src/dma.c.obj
- .debug_info    0x000043f0      0xbb9 CMakeFiles/DMS-25-ACU.dir/Core/Src/fdcan.c.obj
- .debug_info    0x00004fa9      0xbb1 CMakeFiles/DMS-25-ACU.dir/Core/Src/tim.c.obj
- .debug_info    0x00005b5a      0xcf3 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
- .debug_info    0x0000684d      0x387 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_msp.c.obj
- .debug_info    0x00006bd4      0xbf9 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_timebase_tim.c.obj
- .debug_info    0x000077cd     0x15cf CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
- .debug_info    0x00008d9c      0xb9b CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
- .debug_info    0x00009937      0xa41 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
- .debug_info    0x0000a378      0x5d9 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
- .debug_info    0x0000a951      0x869 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
- .debug_info    0x0000b1ba      0x8b5 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
- .debug_info    0x0000ba6f      0x8d9 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
- .debug_info    0x0000c348      0xafa CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
- .debug_info    0x0000ce42     0x1883 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
- .debug_info    0x0000e6c5     0x2c12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
- .debug_info    0x000112d7     0x1923 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
- .debug_info    0x00012bfa      0x316 CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
- .debug_info    0x00012f10      0x2af CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_info    0x000131bf     0x155a CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
- .debug_info    0x00014719     0x1bda CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_info    0x000162f3     0x126b CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- .debug_info    0x0001755e     0x36fa CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
- .debug_info    0x0001ac58      0x433 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_info    0x0001b08b      0x289 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
- .debug_info    0x0001b314       0x30 CMakeFiles/DMS-25-ACU.dir/startup_stm32g0b1xx.s.obj
- .debug_info    0x0001b344      0x11b C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
+.debug_info     0x00000000    0x1b483
+ .debug_info    0x00000000     0x1737 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
+ .debug_info    0x00001737      0x841 CMakeFiles/DMS-25-ACU.dir/Core/User/heartbeat.c.obj
+ .debug_info    0x00001f78      0x250 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
+ .debug_info    0x000021c8      0xb0a CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
+ .debug_info    0x00002cd2      0x3da CMakeFiles/DMS-25-ACU.dir/Core/Src/gpio.c.obj
+ .debug_info    0x000030ac      0x435 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
+ .debug_info    0x000034e1      0xbce CMakeFiles/DMS-25-ACU.dir/Core/Src/adc.c.obj
+ .debug_info    0x000040af      0x365 CMakeFiles/DMS-25-ACU.dir/Core/Src/dma.c.obj
+ .debug_info    0x00004414      0xbb9 CMakeFiles/DMS-25-ACU.dir/Core/Src/fdcan.c.obj
+ .debug_info    0x00004fcd      0xbb1 CMakeFiles/DMS-25-ACU.dir/Core/Src/tim.c.obj
+ .debug_info    0x00005b7e      0xcf3 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
+ .debug_info    0x00006871      0x387 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_msp.c.obj
+ .debug_info    0x00006bf8      0xbf9 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_timebase_tim.c.obj
+ .debug_info    0x000077f1     0x15cf CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+ .debug_info    0x00008dc0      0xb9b CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+ .debug_info    0x0000995b      0xa41 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
+ .debug_info    0x0000a39c      0x5d9 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
+ .debug_info    0x0000a975      0x869 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+ .debug_info    0x0000b1de      0x8b5 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
+ .debug_info    0x0000ba93      0x8d9 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+ .debug_info    0x0000c36c      0xafa CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+ .debug_info    0x0000ce66     0x1883 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+ .debug_info    0x0000e6e9     0x2c12 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+ .debug_info    0x000112fb     0x1923 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+ .debug_info    0x00012c1e      0x316 CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
+ .debug_info    0x00012f34      0x2af CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_info    0x000131e3     0x155a CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+ .debug_info    0x0001473d     0x1bda CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_info    0x00016317     0x126b CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ .debug_info    0x00017582     0x36fa CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+ .debug_info    0x0001ac7c      0x433 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_info    0x0001b0af      0x289 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+ .debug_info    0x0001b338       0x30 CMakeFiles/DMS-25-ACU.dir/startup_stm32g0b1xx.s.obj
+ .debug_info    0x0001b368      0x11b C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
 
-.debug_abbrev   0x00000000     0x453c
- .debug_abbrev  0x00000000      0x31e CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
- .debug_abbrev  0x0000031e      0x1d3 CMakeFiles/DMS-25-ACU.dir/Core/User/heartbeat.c.obj
- .debug_abbrev  0x000004f1      0x10a CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
- .debug_abbrev  0x000005fb      0x238 CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00000833      0x158 CMakeFiles/DMS-25-ACU.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x0000098b      0x166 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
- .debug_abbrev  0x00000af1      0x203 CMakeFiles/DMS-25-ACU.dir/Core/Src/adc.c.obj
- .debug_abbrev  0x00000cf4      0x115 CMakeFiles/DMS-25-ACU.dir/Core/Src/dma.c.obj
- .debug_abbrev  0x00000e09      0x1f1 CMakeFiles/DMS-25-ACU.dir/Core/Src/fdcan.c.obj
- .debug_abbrev  0x00000ffa      0x1d5 CMakeFiles/DMS-25-ACU.dir/Core/Src/tim.c.obj
- .debug_abbrev  0x000011cf      0x1a9 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
- .debug_abbrev  0x00001378      0x133 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_msp.c.obj
- .debug_abbrev  0x000014ab      0x20f CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_timebase_tim.c.obj
- .debug_abbrev  0x000016ba      0x276 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
- .debug_abbrev  0x00001930      0x2aa CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
- .debug_abbrev  0x00001bda      0x244 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
- .debug_abbrev  0x00001e1e      0x1c8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
- .debug_abbrev  0x00001fe6      0x214 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
- .debug_abbrev  0x000021fa      0x23c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
- .debug_abbrev  0x00002436      0x2ab CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
- .debug_abbrev  0x000026e1      0x27f CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
- .debug_abbrev  0x00002960      0x1eb CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
- .debug_abbrev  0x00002b4b      0x287 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
- .debug_abbrev  0x00002dd2      0x297 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
- .debug_abbrev  0x00003069      0x119 CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
- .debug_abbrev  0x00003182       0xf5 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_abbrev  0x00003277      0x33a CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
- .debug_abbrev  0x000035b1      0x32a CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_abbrev  0x000038db      0x312 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- .debug_abbrev  0x00003bed      0x4c5 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
- .debug_abbrev  0x000040b2      0x1b9 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_abbrev  0x0000426b      0x1ec CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
- .debug_abbrev  0x00004457       0x24 CMakeFiles/DMS-25-ACU.dir/startup_stm32g0b1xx.s.obj
- .debug_abbrev  0x0000447b       0xc1 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
+.debug_abbrev   0x00000000     0x452d
+ .debug_abbrev  0x00000000      0x30f CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
+ .debug_abbrev  0x0000030f      0x1d3 CMakeFiles/DMS-25-ACU.dir/Core/User/heartbeat.c.obj
+ .debug_abbrev  0x000004e2      0x10a CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
+ .debug_abbrev  0x000005ec      0x238 CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x00000824      0x158 CMakeFiles/DMS-25-ACU.dir/Core/Src/gpio.c.obj
+ .debug_abbrev  0x0000097c      0x166 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
+ .debug_abbrev  0x00000ae2      0x203 CMakeFiles/DMS-25-ACU.dir/Core/Src/adc.c.obj
+ .debug_abbrev  0x00000ce5      0x115 CMakeFiles/DMS-25-ACU.dir/Core/Src/dma.c.obj
+ .debug_abbrev  0x00000dfa      0x1f1 CMakeFiles/DMS-25-ACU.dir/Core/Src/fdcan.c.obj
+ .debug_abbrev  0x00000feb      0x1d5 CMakeFiles/DMS-25-ACU.dir/Core/Src/tim.c.obj
+ .debug_abbrev  0x000011c0      0x1a9 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
+ .debug_abbrev  0x00001369      0x133 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_msp.c.obj
+ .debug_abbrev  0x0000149c      0x20f CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_timebase_tim.c.obj
+ .debug_abbrev  0x000016ab      0x276 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+ .debug_abbrev  0x00001921      0x2aa CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+ .debug_abbrev  0x00001bcb      0x244 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
+ .debug_abbrev  0x00001e0f      0x1c8 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
+ .debug_abbrev  0x00001fd7      0x214 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+ .debug_abbrev  0x000021eb      0x23c CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
+ .debug_abbrev  0x00002427      0x2ab CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+ .debug_abbrev  0x000026d2      0x27f CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+ .debug_abbrev  0x00002951      0x1eb CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+ .debug_abbrev  0x00002b3c      0x287 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+ .debug_abbrev  0x00002dc3      0x297 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+ .debug_abbrev  0x0000305a      0x119 CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
+ .debug_abbrev  0x00003173       0xf5 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_abbrev  0x00003268      0x33a CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+ .debug_abbrev  0x000035a2      0x32a CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_abbrev  0x000038cc      0x312 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ .debug_abbrev  0x00003bde      0x4c5 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+ .debug_abbrev  0x000040a3      0x1b9 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_abbrev  0x0000425c      0x1ec CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+ .debug_abbrev  0x00004448       0x24 CMakeFiles/DMS-25-ACU.dir/startup_stm32g0b1xx.s.obj
+ .debug_abbrev  0x0000446c       0xc1 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
 
 .debug_aranges  0x00000000     0x19f8
  .debug_aranges
@@ -7083,41 +7083,41 @@ LOAD C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_macro   0x00020891      0x19f CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .debug_macro   0x00020a30      0x136 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
 
-.debug_line     0x00000000    0x1c8c4
- .debug_line    0x00000000      0xbc4 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
- .debug_line    0x00000bc4      0x9b8 CMakeFiles/DMS-25-ACU.dir/Core/User/heartbeat.c.obj
- .debug_line    0x0000157c      0x793 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
- .debug_line    0x00001d0f      0x9bc CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
- .debug_line    0x000026cb      0x716 CMakeFiles/DMS-25-ACU.dir/Core/Src/gpio.c.obj
- .debug_line    0x00002de1      0x8f1 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
- .debug_line    0x000036d2      0x7cf CMakeFiles/DMS-25-ACU.dir/Core/Src/adc.c.obj
- .debug_line    0x00003ea1      0x6f6 CMakeFiles/DMS-25-ACU.dir/Core/Src/dma.c.obj
- .debug_line    0x00004597      0x797 CMakeFiles/DMS-25-ACU.dir/Core/Src/fdcan.c.obj
- .debug_line    0x00004d2e      0x784 CMakeFiles/DMS-25-ACU.dir/Core/Src/tim.c.obj
- .debug_line    0x000054b2      0x781 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
- .debug_line    0x00005c33      0x6fc CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_msp.c.obj
- .debug_line    0x0000632f      0x773 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_timebase_tim.c.obj
- .debug_line    0x00006aa2     0x18dc CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
- .debug_line    0x0000837e      0xf25 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
- .debug_line    0x000092a3     0x1164 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
- .debug_line    0x0000a407      0xb40 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
- .debug_line    0x0000af47      0xe40 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
- .debug_line    0x0000bd87      0xb94 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
- .debug_line    0x0000c91b      0xb48 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
- .debug_line    0x0000d463      0xad3 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
- .debug_line    0x0000df36     0x190d CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
- .debug_line    0x0000f843     0x3cef CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
- .debug_line    0x00013532     0x1c6f CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
- .debug_line    0x000151a1      0x76d CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
- .debug_line    0x0001590e      0x5b7 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_line    0x00015ec5     0x12c6 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
- .debug_line    0x0001718b     0x1953 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_line    0x00018ade      0xb25 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- .debug_line    0x00019603     0x2271 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
- .debug_line    0x0001b874      0x7a8 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_line    0x0001c01c      0x62c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
- .debug_line    0x0001c648       0x7b CMakeFiles/DMS-25-ACU.dir/startup_stm32g0b1xx.s.obj
- .debug_line    0x0001c6c3      0x201 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
+.debug_line     0x00000000    0x1c8d0
+ .debug_line    0x00000000      0xbd0 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj
+ .debug_line    0x00000bd0      0x9b8 CMakeFiles/DMS-25-ACU.dir/Core/User/heartbeat.c.obj
+ .debug_line    0x00001588      0x793 CMakeFiles/DMS-25-ACU.dir/Core/User/io_control.c.obj
+ .debug_line    0x00001d1b      0x9bc CMakeFiles/DMS-25-ACU.dir/Core/Src/main.c.obj
+ .debug_line    0x000026d7      0x716 CMakeFiles/DMS-25-ACU.dir/Core/Src/gpio.c.obj
+ .debug_line    0x00002ded      0x8f1 CMakeFiles/DMS-25-ACU.dir/Core/Src/app_freertos.c.obj
+ .debug_line    0x000036de      0x7cf CMakeFiles/DMS-25-ACU.dir/Core/Src/adc.c.obj
+ .debug_line    0x00003ead      0x6f6 CMakeFiles/DMS-25-ACU.dir/Core/Src/dma.c.obj
+ .debug_line    0x000045a3      0x797 CMakeFiles/DMS-25-ACU.dir/Core/Src/fdcan.c.obj
+ .debug_line    0x00004d3a      0x784 CMakeFiles/DMS-25-ACU.dir/Core/Src/tim.c.obj
+ .debug_line    0x000054be      0x781 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_it.c.obj
+ .debug_line    0x00005c3f      0x6fc CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_msp.c.obj
+ .debug_line    0x0000633b      0x773 CMakeFiles/DMS-25-ACU.dir/Core/Src/stm32g0xx_hal_timebase_tim.c.obj
+ .debug_line    0x00006aae     0x18dc CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c.obj
+ .debug_line    0x0000838a      0xf25 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+ .debug_line    0x000092af     0x1164 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
+ .debug_line    0x0000a413      0xb40 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
+ .debug_line    0x0000af53      0xe40 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+ .debug_line    0x0000bd93      0xb94 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
+ .debug_line    0x0000c927      0xb48 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+ .debug_line    0x0000d46f      0xad3 CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+ .debug_line    0x0000df42     0x190d CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c.obj
+ .debug_line    0x0000f84f     0x3cef CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+ .debug_line    0x0001353e     0x1c6f CMakeFiles/DMS-25-ACU.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+ .debug_line    0x000151ad      0x76d CMakeFiles/DMS-25-ACU.dir/Core/Src/system_stm32g0xx.c.obj
+ .debug_line    0x0001591a      0x5b7 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_line    0x00015ed1     0x12c6 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+ .debug_line    0x00017197     0x1953 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_line    0x00018aea      0xb25 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ .debug_line    0x0001960f     0x2271 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+ .debug_line    0x0001b880      0x7a8 CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_line    0x0001c028      0x62c CMakeFiles/DMS-25-ACU.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
+ .debug_line    0x0001c654       0x7b CMakeFiles/DMS-25-ACU.dir/startup_stm32g0b1xx.s.obj
+ .debug_line    0x0001c6cf      0x201 C:/ST/STM32CubeCLT_1.15.1/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
 
 .debug_str      0x00000000    0xce9c4
  .debug_str     0x00000000    0xc3844 CMakeFiles/DMS-25-ACU.dir/Core/User/app_main.c.obj

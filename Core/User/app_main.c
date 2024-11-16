@@ -73,33 +73,6 @@ static void FDCAN_Config(void) {
     }
 }
 
-void simple_precharge(){
-    // NOTE FOR TEST CIRCUIT PIN7 = AIR+, PIN6 = AIR=
-    // BUF[0] = VBATT, BUF[1] = VTS
-    uint32_t vbatt, vts = 0;
-    
-    // Close AIR -
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
-
-    // Check current voltage of the battery
-    vbatt = adc_buf[0];
-    
-    // Enable Pre-charge
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-
-    // Check Voltage or Timer
-    uint32_t startTime = HAL_GetTick();
-    while ((HAL_GetTick() - startTime) < 5000){
-        // 
-    }
- 
-    // Close AIR +
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
-
-    // Disable Pre-charge
-    HAL_Delay(100);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-}
 
 uint32_t start_precharge(){
     bool successStatus = false;
@@ -112,7 +85,7 @@ uint32_t start_precharge(){
     enable_precharge_relay();
 
     // Check voltage or timer
-    vTaskDelay(5000);
+    vTaskDelay(10000);
     if (0) { // TODO: Write code to time how long precharge takes
         goto cleanup;
     }
@@ -181,6 +154,7 @@ void StateMachineTaskEntry(void *argument){
 
             case HVC_TS_ENERGIZED:
                 if (tractiveSystemEnableCmd == false){
+                    disable_all_relays();
                     hvcState = HVC_STANDBY;
                 }
                 break;
@@ -232,12 +206,19 @@ void HVCStatusTaskEntry(void *argument){
     TxHeader.MessageMarker = 0;
 
     for(;;){
-
-        TxData[0] = hvcState;
-        TxData[1] = adc_buf[0];
-        TxData[2] = adc_buf[1];
-        TxData[3] = adc_buf[2];
         
+
+        // VBATT
+        uint16_t vbatt = adc_buf[0];        
+        TxData[0] = (uint8_t)(vbatt & 0xFF);
+        TxData[1] = (uint8_t)((vbatt >> 8) & 0xFF);
+                 
+        // VTS
+        uint16_t vts = adc_buf[1];
+        TxData[2] = (uint8_t)(vts & 0xFF);
+        TxData[3] = (uint8_t)((vts >> 8) & 0xFF); 
+        
+
         if (HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader, TxData) != HAL_OK)
         {
             /* Transmission request Error */
