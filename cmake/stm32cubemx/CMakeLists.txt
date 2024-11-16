@@ -7,6 +7,7 @@ add_library(stm32cubemx INTERFACE)
 enable_language(C ASM)
 
 target_compile_definitions(stm32cubemx INTERFACE 
+	CMSIS_device_header=<stm32g0xx.h> 
 	USE_HAL_DRIVER 
 	STM32G0B1xx
     $<$<CONFIG:Debug>:DEBUG>
@@ -16,6 +17,9 @@ target_include_directories(stm32cubemx INTERFACE
     ../../Core/Inc
     ../../Drivers/STM32G0xx_HAL_Driver/Inc
     ../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy
+    ../../Middlewares/Third_Party/FreeRTOS/Source/include
+    ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2
+    ../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0
     ../../Drivers/CMSIS/Device/ST/STM32G0xx/Include
     ../../Drivers/CMSIS/Include
 )
@@ -23,12 +27,14 @@ target_include_directories(stm32cubemx INTERFACE
 target_sources(stm32cubemx INTERFACE
     ../../Core/Src/main.c
     ../../Core/Src/gpio.c
+    ../../Core/Src/app_freertos.c
     ../../Core/Src/adc.c
     ../../Core/Src/dma.c
     ../../Core/Src/fdcan.c
     ../../Core/Src/tim.c
     ../../Core/Src/stm32g0xx_it.c
     ../../Core/Src/stm32g0xx_hal_msp.c
+    ../../Core/Src/stm32g0xx_hal_timebase_tim.c
     ../../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c
     ../../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc_ex.c
     ../../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_adc.c
@@ -50,6 +56,16 @@ target_sources(stm32cubemx INTERFACE
     ../../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c
     ../../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c
     ../../Core/Src/system_stm32g0xx.c
+    ../../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
+    ../../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
+    ../../Middlewares/Third_Party/FreeRTOS/Source/list.c
+    ../../Middlewares/Third_Party/FreeRTOS/Source/queue.c
+    ../../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
+    ../../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+    ../../Middlewares/Third_Party/FreeRTOS/Source/timers.c
+    ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c
+    ../../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
+    ../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
     ../../Core/Src/sysmem.c
     ../../Core/Src/syscalls.c
     ../../startup_stm32g0b1xx.s
