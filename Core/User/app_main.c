@@ -1,15 +1,24 @@
 #include "stm32g0xx_hal.h"
+
+#include "app_main.h"
+#include "io_control.h"
+#include "hvc_config.h"
+
 #include "main.h"
 #include "dma.h"
 #include "FreeRTOS.h"
 #include "cmsis_os.h"
 
 #include <stdlib.h>
+#include <stdbool.h>
+
 
 // Defines
 #define ADC_BUFFER_LEN 3
 
 
+// Global State Machine 
+HVC_State_t hvcState;
 
 // External Handles 
 extern ADC_HandleTypeDef hadc1;
@@ -22,43 +31,11 @@ volatile uint16_t adc_buf[ADC_BUFFER_LEN]; // NOTE MOVE TO VCU STYLE BUFFER
 // CANbus handle
 extern FDCAN_HandleTypeDef hfdcan1;
 
-// CANbus Data Frame
-uint8_t ubKeyNumber = 0x0;
-uint8_t ubKeyNumberValue = 0x0;
-
-FDCAN_TxHeaderTypeDef TxHeader;
-uint8_t TxData[8];
-
-// CANbus Heartbeat 
-FDCAN_TxHeaderTypeDef TxHeartbeat;
-uint8_t TxHeartbeatData[8];
-
-// HVC State Machine 
-typedef enum {
-    HVC_OFF = 0,
-    HVC_STANDBY,
-    HVC_PRECHARGE_ACTIVE,
-    HVC_TS_ENERGIZED,
-    HVC_PRECHARGE_FAULT,
-    HVC_SDC_FAULT
-} HVC_State_t;
-
-void Start_StatusLED(void *argument){
-    (void)argument;
-    
-    for (;;){
-        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-        osDelay(100);
-    }
-}
-
-void Start_HVCStatus(void *argument){
-    (void)argument;
-    for(;;){
-        osDelay(100);
-    }
-}
-
+// Globals for CAN
+volatile bool commandMessageReceived = false;
+volatile bool tractiveSystemEnableCmd = false;
+volatile bool sdcInStatus = true;   // TODO: Check GPIO pin and set this to default false
+uint32_t lastMessageTime = 0;       // 
 
 
 static void FDCAN_Config(void) {
@@ -94,28 +71,6 @@ static void FDCAN_Config(void) {
     { 
         Error_Handler();
     }
-
-    /* Prepare Tx Header */
-    TxHeader.Identifier = 0x323;
-    TxHeader.IdType = FDCAN_STANDARD_ID;
-    TxHeader.TxFrameType = FDCAN_DATA_FRAME;
-    TxHeader.DataLength = FDCAN_DLC_BYTES_8;
-    TxHeader.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
-    TxHeader.BitRateSwitch = FDCAN_BRS_OFF;
-    TxHeader.FDFormat = FDCAN_CLASSIC_CAN;
-    TxHeader.TxEventFifoControl = FDCAN_NO_TX_EVENTS;
-    TxHeader.MessageMarker = 0;
-
-    // Heartbeat Signal 
-    TxHeartbeat.Identifier = 0x320;
-    TxHeartbeat.IdType = FDCAN_STANDARD_ID;
-    TxHeartbeat.TxFrameType = FDCAN_DATA_FRAME;
-    TxHeartbeat.DataLength = FDCAN_DLC_BYTES_8;
-    TxHeartbeat.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
-    TxHeartbeat.BitRateSwitch = FDCAN_BRS_OFF;
-    TxHeartbeat.FDFormat = FDCAN_CLASSIC_CAN;
-    TxHeartbeat.TxEventFifoControl = FDCAN_NO_TX_EVENTS;
-    TxHeartbeat.MessageMarker = 0;
 }
 
 void simple_precharge(){
@@ -146,22 +101,36 @@ void simple_precharge(){
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
 }
 
-void can_heartbeat(){
-    // Transmit Heartbeat   
-    TxHeartbeatData[0] = 0xFF;
-    TxHeartbeatData[1] = 0xFF;
-    TxHeartbeatData[2] = 0xFF;
-    TxHeartbeatData[3] = 0xFF;
-    TxHeartbeatData[4] = 0xFF;
-    TxHeartbeatData[5] = 0xFF;
-    TxHeartbeatData[6] = 0xFF;
-    TxHeartbeatData[7] = 0xFF;
+uint32_t start_precharge(){
+    bool successStatus = false;
+    // Close AIR-
+    enable_air_negative();
 
-    if (HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeartbeat, TxHeartbeatData) != HAL_OK)
-    {
-        /* Transmission request Error */
-        Error_Handler();
+    // Check Battery Voltage
+
+    // Enable Precharge 
+    enable_precharge_relay();
+
+    // Check voltage or timer
+    vTaskDelay(5000);
+    if (0) { // TODO: Write code to time how long precharge takes
+        goto cleanup;
     }
+
+    // Enable AIR +
+    enable_air_positive();
+
+    successStatus = true;
+
+cleanup:
+    disable_precharge_relay();
+
+    // Error Handling 
+    if (!successStatus){
+        disable_all_relays();
+    }
+    
+    return successStatus;
 }
 
 void app_init(){
@@ -175,47 +144,111 @@ void app_init(){
     return;
 }
 
-void app_main(){
-    uint32_t enablePrecharge = 0;
-    uint32_t TSStatus = 0;
 
-    uint32_t currentTime = 0;
-    uint32_t prevTime = 0;
+void StateMachineTaskEntry(void *argument){
+    (void)argument;
 
-    while (1){
-        
-        currentTime = HAL_GetTick();    
-        if (currentTime - prevTime > 500){
-            prevTime = currentTime;
+    hvcState = HVC_OFF;
+    for (;;) {
 
-            can_heartbeat();
-
-            // HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+        if ((HAL_GetTick() - lastMessageTime) > CMD_MSG_TIMEOUT) { // If no message received 
+            hvcState = HVC_TIMEOUT_FAULT;
         }
 
 
-        if (enablePrecharge == 1){
-            simple_precharge();
-            TSStatus = 1;
-            enablePrecharge = 0;
+        // State Machine Logic 
+        switch (hvcState) {
+            case HVC_OFF:
+                // Startup Logic
+                hvcState = HVC_STANDBY;
+                break;
+            
+            case HVC_STANDBY:
+                disable_all_relays();
+                if (tractiveSystemEnableCmd) {
+                    hvcState = HVC_PRECHARGE;   // Transition state
+                }
+                break;
+
+            case HVC_PRECHARGE:
+                if (start_precharge()) {
+                    hvcState = HVC_TS_ENERGIZED;
+                } 
+                else {
+                    hvcState = HVC_PRECHARGE_FAULT;
+                }
+                break;
+
+            case HVC_TS_ENERGIZED:
+                if (tractiveSystemEnableCmd == false){
+                    hvcState = HVC_STANDBY;
+                }
+                break;
+
+            case HVC_PRECHARGE_FAULT:
+                disable_all_relays();
+                if (tractiveSystemEnableCmd == false){
+                    hvcState = HVC_STANDBY;
+                }
+                break;
+
+            case HVC_SDC_FAULT:
+                disable_all_relays();
+                if (tractiveSystemEnableCmd == false){
+                    hvcState = HVC_STANDBY;
+                }
+                break;
+
+            case HVC_TIMEOUT_FAULT:
+                disable_all_relays();
+                if (tractiveSystemEnableCmd == false){
+                    hvcState = HVC_STANDBY;
+                }
+                break;
+            
+            default:
+                break;
         }
-
-        
-
-
-        if (1){
-            uint32_t vbatt = adc_buf[0]; 
-            uint32_t vts = adc_buf[1];
-            // Check of TS voltage difference is greater then 10%
-            // if (abs(vbatt - vts) > 0.2 * vbatt){ 
-            //     // Disable contactors
-            //     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_RESET);
-            //     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_RESET);  
-            //     TSStatus = 0;
-            // }
-        }
+        osDelay(10);
     }
 }
+
+
+void HVCStatusTaskEntry(void *argument){
+    (void)argument;
+
+    FDCAN_TxHeaderTypeDef TxHeader; // HVC_Status_Message 
+    uint8_t TxData[7];
+
+    /* Prepare Tx Header */
+    TxHeader.Identifier = 0x01B;
+    TxHeader.IdType = FDCAN_STANDARD_ID;
+    TxHeader.TxFrameType = FDCAN_DATA_FRAME;
+    TxHeader.DataLength = FDCAN_DLC_BYTES_8;
+    TxHeader.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
+    TxHeader.BitRateSwitch = FDCAN_BRS_OFF;
+    TxHeader.FDFormat = FDCAN_CLASSIC_CAN;
+    TxHeader.TxEventFifoControl = FDCAN_NO_TX_EVENTS;
+    TxHeader.MessageMarker = 0;
+
+    for(;;){
+
+        TxData[0] = hvcState;
+        TxData[1] = adc_buf[0];
+        TxData[2] = adc_buf[1];
+        TxData[3] = adc_buf[2];
+        
+        if (HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader, TxData) != HAL_OK)
+        {
+            /* Transmission request Error */
+            Error_Handler();
+        }
+
+
+        osDelay(500);
+    }
+}
+
 
 void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef* hadc) {
 	(void)hadc;
@@ -234,14 +267,27 @@ void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)
     if((RxFifo0ITs & FDCAN_IT_RX_FIFO0_NEW_MESSAGE) != RESET)
         {
         /* retrieve Rx messages from RX FIFO0 */
-        if (HAL_FDCAN_GetRxMessage(hfdcan, FDCAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK)
-        {
+        if (HAL_FDCAN_GetRxMessage(hfdcan, FDCAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK) {
             /* Reception Error */
             Error_Handler();
         }
         
-        if ((RxHeader.Identifier == 0x321) && (RxHeader.IdType == FDCAN_STANDARD_ID))
-        {
+        if ((RxHeader.Identifier == 0x1A) && (RxHeader.IdType == FDCAN_STANDARD_ID)) {
+            if (RxData[0] == 1){ // TODO: Add SDC check
+                if (sdcInStatus == true){ 
+                    tractiveSystemEnableCmd = true; 
+                }
+                else {
+                    hvcState = HVC_SDC_FAULT; // Attempted to enable TS, while SDC is false
+                }
+            }
+            else if (RxData[0] == 0) {
+                tractiveSystemEnableCmd = false; 
+            }
+            lastMessageTime = HAL_GetTick();
+        }
+
+        if ((RxHeader.Identifier == 0x321) && (RxHeader.IdType == FDCAN_STANDARD_ID)) {
             HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
         }
     }

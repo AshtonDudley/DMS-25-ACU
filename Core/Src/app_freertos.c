@@ -61,14 +61,22 @@ const osThreadAttr_t Task_HVCStatus_attributes = {
   .priority = (osPriority_t) osPriorityLow,
   .stack_size = 128 * 4
 };
+/* Definitions for Task_StateM */
+osThreadId_t Task_StateMHandle;
+const osThreadAttr_t Task_StateM_attributes = {
+  .name = "Task_StateM",
+  .priority = (osPriority_t) osPriorityLow,
+  .stack_size = 128 * 4
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
 
 /* USER CODE END FunctionPrototypes */
 
-void Start_StatusLED(void *argument);
-extern void Start_HVCStatus(void *argument);
+void HeartbeatTaskEntry(void *argument);
+extern void HVCStatusTaskEntry(void *argument);
+extern void StateMachineTaskEntry(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -100,10 +108,13 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* creation of Task_StatusLED */
-  Task_StatusLEDHandle = osThreadNew(Start_StatusLED, NULL, &Task_StatusLED_attributes);
+  Task_StatusLEDHandle = osThreadNew(HeartbeatTaskEntry, NULL, &Task_StatusLED_attributes);
 
   /* creation of Task_HVCStatus */
-  Task_HVCStatusHandle = osThreadNew(Start_HVCStatus, NULL, &Task_HVCStatus_attributes);
+  Task_HVCStatusHandle = osThreadNew(HVCStatusTaskEntry, NULL, &Task_HVCStatus_attributes);
+
+  /* creation of Task_StateM */
+  Task_StateMHandle = osThreadNew(StateMachineTaskEntry, NULL, &Task_StateM_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -115,22 +126,22 @@ void MX_FREERTOS_Init(void) {
 
 }
 
-/* USER CODE BEGIN Header_Start_StatusLED */
+/* USER CODE BEGIN Header_HeartbeatTaskEntry */
 /**
   * @brief  Function implementing the Task_StatusLED thread.
   * @param  argument: Not used
   * @retval None
   */
-/* USER CODE END Header_Start_StatusLED */
-__weak void Start_StatusLED(void *argument)
+/* USER CODE END Header_HeartbeatTaskEntry */
+__weak void HeartbeatTaskEntry(void *argument)
 {
-  /* USER CODE BEGIN Start_StatusLED */
+  /* USER CODE BEGIN HeartbeatTaskEntry */
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
   }
-  /* USER CODE END Start_StatusLED */
+  /* USER CODE END HeartbeatTaskEntry */
 }
 
 /* Private application code --------------------------------------------------*/
