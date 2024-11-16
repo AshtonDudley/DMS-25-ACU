@@ -54,6 +54,13 @@ const osThreadAttr_t Task_StatusLED_attributes = {
   .priority = (osPriority_t) osPriorityNormal,
   .stack_size = 128 * 4
 };
+/* Definitions for Task_HVCStatus */
+osThreadId_t Task_HVCStatusHandle;
+const osThreadAttr_t Task_HVCStatus_attributes = {
+  .name = "Task_HVCStatus",
+  .priority = (osPriority_t) osPriorityLow,
+  .stack_size = 128 * 4
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -61,6 +68,7 @@ const osThreadAttr_t Task_StatusLED_attributes = {
 /* USER CODE END FunctionPrototypes */
 
 void Start_StatusLED(void *argument);
+extern void Start_HVCStatus(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -94,6 +102,9 @@ void MX_FREERTOS_Init(void) {
   /* creation of Task_StatusLED */
   Task_StatusLEDHandle = osThreadNew(Start_StatusLED, NULL, &Task_StatusLED_attributes);
 
+  /* creation of Task_HVCStatus */
+  Task_HVCStatusHandle = osThreadNew(Start_HVCStatus, NULL, &Task_HVCStatus_attributes);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -117,8 +128,7 @@ __weak void Start_StatusLED(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-    osDelay(100);
+    osDelay(1);
   }
   /* USER CODE END Start_StatusLED */
 }

@@ -1,6 +1,8 @@
 #include "stm32g0xx_hal.h"
 #include "main.h"
 #include "dma.h"
+#include "FreeRTOS.h"
+#include "cmsis_os.h"
 
 #include <stdlib.h>
 
@@ -31,8 +33,33 @@ uint8_t TxData[8];
 FDCAN_TxHeaderTypeDef TxHeartbeat;
 uint8_t TxHeartbeatData[8];
 
+// HVC State Machine 
+typedef enum {
+    HVC_OFF = 0,
+    HVC_STANDBY,
+    HVC_PRECHARGE_ACTIVE,
+    HVC_TS_ENERGIZED,
+    HVC_PRECHARGE_FAULT,
+    HVC_SDC_FAULT
+} HVC_State_t;
 
-static void FDCAN_Config(void);
+void Start_StatusLED(void *argument){
+    (void)argument;
+    
+    for (;;){
+        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+        osDelay(100);
+    }
+}
+
+void Start_HVCStatus(void *argument){
+    (void)argument;
+    for(;;){
+        osDelay(100);
+    }
+}
+
+
 
 static void FDCAN_Config(void) {
     FDCAN_FilterTypeDef sFilterConfig;
@@ -136,7 +163,6 @@ void can_heartbeat(){
         Error_Handler();
     }
 }
-
 
 void app_init(){
 
