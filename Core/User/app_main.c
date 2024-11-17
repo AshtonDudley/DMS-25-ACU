@@ -11,6 +11,8 @@
 
 #include <stdlib.h>
 #include <stdbool.h>
+#include <math.h>
+
 
 
 // Defines
@@ -73,25 +75,54 @@ static void FDCAN_Config(void) {
     }
 }
 
+// TODO: Rework to not use floats?
+float percentDif(int value1, int value2){ 
+    if (value1 == 0 && value2 == 0){
+        return 0.0;
+    }
+
+    return fabs((float)value1 - (float)value2) / (((float)abs(value1) + (float)abs(value2)) / 2.0) * 100.0;
+}
 
 uint32_t start_precharge(){
     bool successStatus = false;
+    
+
     // Close AIR-
     enable_air_negative();
-
+    
     // Check Battery Voltage
+    vTaskDelay(pdMS_TO_TICKS(500)); 
+    uint32_t vbatt = adc_buf[0];
 
-    // Enable Precharge 
+    // Enable Precharge
     enable_precharge_relay();
+    vTaskDelay(pdMS_TO_TICKS(500)); 
 
     // Check voltage or timer
-    vTaskDelay(10000);
+    
+    uint32_t prechargeStartTime = HAL_GetTick();
+    // Wait at least PRECHARGE_MIN_TIME, ignoring the percent difference
+    while ((HAL_GetTick() - prechargeStartTime) < PRECHARGE_MIN_TIME){
+        // Wait 
+    }
+
+    // After minimum time has passed, check percent difference and maximum time 
+    do {
+        // Timeout if it takes too long
+        if ((HAL_GetTick() - prechargeStartTime) >= PRECHARGE_MAX_TIME){
+            goto cleanup;
+        }
+    } while (percentDif(vbatt, adc_buf[1]) < PRECHARGE_PERCENT_DIF);
+
+
     if (0) { // TODO: Write code to time how long precharge takes
         goto cleanup;
     }
 
     // Enable AIR +
     enable_air_positive();
+    vTaskDelay(pdMS_TO_TICKS(100)); 
 
     successStatus = true;
 
@@ -207,16 +238,16 @@ void HVCStatusTaskEntry(void *argument){
 
     for(;;){
         
-
+        TxData[0] = (uint8_t)hvcState;
         // VBATT
         uint16_t vbatt = adc_buf[0];        
-        TxData[0] = (uint8_t)(vbatt & 0xFF);
-        TxData[1] = (uint8_t)((vbatt >> 8) & 0xFF);
+        TxData[1] = (uint8_t)(vbatt & 0xFF);
+        TxData[2] = (uint8_t)((vbatt >> 8) & 0xFF);
                  
         // VTS
         uint16_t vts = adc_buf[1];
-        TxData[2] = (uint8_t)(vts & 0xFF);
-        TxData[3] = (uint8_t)((vts >> 8) & 0xFF); 
+        TxData[3] = (uint8_t)(vts & 0xFF);
+        TxData[4] = (uint8_t)((vts >> 8) & 0xFF); 
         
 
         if (HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader, TxData) != HAL_OK)
