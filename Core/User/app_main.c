@@ -81,7 +81,8 @@ float percentDif(int value1, int value2){
         return 0.0;
     }
 
-    return fabs((float)value1 - (float)value2) / (((float)abs(value1) + (float)abs(value2)) / 2.0) * 100.0;
+    float result = fabs((float)value1 - (float)value2) / (((float)abs(value1) + (float)abs(value2)) / 2.0) * 100.0;
+    return result;
 }
 
 uint32_t start_precharge(){
@@ -93,7 +94,7 @@ uint32_t start_precharge(){
     
     // Check Battery Voltage
     vTaskDelay(pdMS_TO_TICKS(500)); 
-    uint32_t vbatt = adc_buf[0];
+    
 
     // Enable Precharge
     enable_precharge_relay();
@@ -106,14 +107,14 @@ uint32_t start_precharge(){
     while ((HAL_GetTick() - prechargeStartTime) < PRECHARGE_MIN_TIME){
         // Wait 
     }
-
+    uint32_t vbatt = adc_buf[0];
     // After minimum time has passed, check percent difference and maximum time 
     do {
         // Timeout if it takes too long
         if ((HAL_GetTick() - prechargeStartTime) >= PRECHARGE_MAX_TIME){
             goto cleanup;
         }
-    } while (percentDif(vbatt, adc_buf[1]) < PRECHARGE_PERCENT_DIF);
+    } while (percentDif(vbatt, adc_buf[1]) >= PRECHARGE_PERCENT_DIF);
 
 
     if (0) { // TODO: Write code to time how long precharge takes
